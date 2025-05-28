@@ -4,6 +4,7 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from llm.gemini import get_gemini_client
+from llm.deepseek import get_deepseek_client
 from pydantic import BaseModel, Field
 from typing import List
 import json
@@ -27,6 +28,7 @@ class QuantumExplanation(BaseModel):
 def main():
     # Example usage
     llm = get_gemini_client()
+    # llm = get_deepseek_client()
     
     # Structured output for country information
     structured_llm = llm.with_structured_output(CountryInfo)
