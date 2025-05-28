@@ -1,0 +1,7 @@
+.venv
+.env
+audio_chunks
+**/__pycache__
+output
+input
+logs
