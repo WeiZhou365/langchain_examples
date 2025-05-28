@@ -28,7 +28,7 @@ python symmetric_encryption.py encrypt --data "需要加密的敏感信息"
 
 使用自定义密码加密：
 ```bash
-python symmetric_encryption.py encrypt --data "AIzaSyBRJ3BfeHetZyBtT1CONnN6rbwRIHtzeVA" --password "我的安全密码123"
+python symmetric_encryption.py encrypt --data "xxxxxxxx" --password "我的安全密码123"
 ```
 
 ### 2. 解密数据
@@ -57,12 +57,12 @@ python symmetric_encryption.py decrypt --data "gAAAAABm..." --password "我的�
 
 ```bash
 # 加密您的Google API密钥
-python symmetric_encryption.py encrypt -d "AIzaSyBRJ3BfeHetZyBtT1CONnN6rbwRIHtzeVA" -p "强密码2024"
+python symmetric_encryption.py encrypt -d "xxxxxxxx" -p "强密码2024"
 ```
 
 输出：
 ```
-Original Data: AIzaSyBRJ3BfeHetZyBtT1CONnN6rbwRIHtzeVA
+Original Data: xxxxxxxxx
 Encrypted Data: gAAAAABmXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
@@ -76,7 +76,7 @@ python symmetric_encryption.py decrypt -d "gAAAAABmXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 输出：
 ```
 Encrypted Data: gAAAAABmXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-Decrypted Data: AIzaSyBRJ3BfeHetZyBtT1CONnN6rbwRIHtzeVA
+Decrypted Data: xxxxxxxxxx
 ```
 
 ## 代码结构
